@@ -1,0 +1,46 @@
+head {
+  font-family: sans-serif;
+  display: flex;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+}
+
+.board {
+  background: #bd022f;
+  margin: 150px;
+  padding: 50px;
+}
+.gamestatus {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+
+.table {
+  display: grid;
+  background: black;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.box {
+  height: 75px;
+  width: 75px;
+  background: #bd022f;
+  cursor: pointer;
+}
+
+.x::before {
+  content: "x";
+  font-size: 75px;
+}
+
+.o::before {
+  content: "o";
+  font-size: 75px;
+}
